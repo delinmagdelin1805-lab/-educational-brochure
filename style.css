@@ -1,0 +1,271 @@
+/* Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+  min-height:100vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:#020617;
+
+  font-family:'Poppins', sans-serif;
+
+  padding:20px;
+}
+
+/* Brochure */
+
+.brochure{
+  width:100%;
+
+  max-width:1400px;
+
+  min-height:750px;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  border-radius:40px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* Left Panel */
+
+.left-panel{
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed,
+      #ec4899
+    );
+
+  color:white;
+
+  padding:70px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  position:relative;
+}
+
+/* Tag */
+
+.tag{
+  display:inline-block;
+
+  padding:12px 24px;
+
+  border-radius:40px;
+
+  background:
+    rgba(255,255,255,0.15);
+
+  margin-bottom:30px;
+
+  font-size:14px;
+
+  letter-spacing:2px;
+}
+
+/* Heading */
+
+.left-panel h1{
+  font-size:82px;
+
+  line-height:1.1;
+
+  margin-bottom:25px;
+
+  font-weight:800;
+}
+
+/* Paragraph */
+
+.left-panel p{
+  font-size:20px;
+
+  line-height:1.9;
+
+  color:#f8fafc;
+
+  margin-bottom:40px;
+
+  max-width:550px;
+}
+
+/* Button */
+
+button{
+  width:220px;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:50px;
+
+  background:white;
+
+  color:#111827;
+
+  font-size:18px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+/* Hover */
+
+button:hover{
+  transform:
+    translateY(-5px)
+    scale(1.05);
+}
+
+/* Right Panel */
+
+.right-panel{
+  background:white;
+
+  padding:60px;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:25px;
+}
+
+/* Card */
+
+.card{
+  background:#f8fafc;
+
+  border-radius:28px;
+
+  padding:35px;
+
+  transition:0.3s;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Hover */
+
+.card:hover{
+  transform:
+    translateY(-10px);
+}
+
+/* Icons */
+
+.card i{
+  width:75px;
+  height:75px;
+
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  color:white;
+
+  font-size:30px;
+
+  margin-bottom:25px;
+}
+
+/* Card Heading */
+
+.card h2{
+  font-size:28px;
+
+  margin-bottom:18px;
+
+  color:#111827;
+}
+
+/* Card Text */
+
+.card p{
+  font-size:16px;
+
+  line-height:1.8;
+
+  color:#475569;
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+  .brochure{
+    grid-template-columns:1fr;
+  }
+
+  .left-panel h1{
+    font-size:56px;
+  }
+}
+
+@media(max-width:700px){
+
+  .right-panel{
+    grid-template-columns:1fr;
+  }
+
+  .left-panel{
+    padding:50px 30px;
+  }
+
+  .right-panel{
+    padding:30px;
+  }
+
+  .left-panel h1{
+    font-size:42px;
+  }
+
+  .left-panel p{
+    font-size:18px;
+  }
+
+  button{
+    width:100%;
+  }
+}
